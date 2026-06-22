@@ -1,30 +1,40 @@
 body {
     font-family:'Times New Roman', Times, serif;
-    margin: 30px 80px;
+    width: auto;
+    margin: 0px 80px;
     background-color: #05162e;
     /* background-color: #0d1a2b; */
+    position: relative;
     
 }
 
 .heading-sec{
-
-}
-
-#logo{
-    /* font-size: larger;  */
-}
-
-#logo img{
-    border-radius: 70px;
+    position: sticky;
+    top: 0px;
+    z-index: 30;
 }
 
 .nav-bar{
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #05162e;
+
 }
 
-.nav-links{
+#navbar-start{
+    /* font-size: larger;  */
+}
+
+#navbar-start img{
+    border-radius: 70px;
+}
+
+.navbar-center{
     display: flex;
+    align-items: center;
     margin-top: 0px;
     padding-top: 0px;
 }
@@ -34,6 +44,7 @@ body {
     list-style: none;
     border: 2px solid;
     border-radius: 15px;
+    padding: 2px 15px 2px 15px;
     width: 95px;
     height: 45px;
     align-content: center;
@@ -48,6 +59,29 @@ body {
     text-decoration: none;
     font-size: 21px;
     font-weight: 500;
+}
+
+#navbar-end{
+    margin-top: 18px;
+    margin-right: 7px;
+}
+
+#light-btn{
+    height: 45px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 15px;
+
+    /* visibility: visible; */
+}
+
+#light-btn:hover{
+    transform: rotate(180deg);
 }
 
 .hero{
@@ -68,10 +102,6 @@ p{
     color: rgb(173, 176, 177);
     font-size: 22px;
     font-weight: 500;
-}
-
-#light-btn{
-
 }
 
 .hero-btn{
