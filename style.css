@@ -236,9 +236,11 @@ h3{
 }
 
 .icons{
-    /* border: 2px solid rgb(229, 17, 17); */
+    border: 2px solid rgb(229, 17, 17);    
+    width: 70%;
+    margin: auto;
     text-align: center;
-    padding-bottom: 100px;
+    padding: 5px 30px 100px 30px;
 }
 
 .icons h2{
@@ -247,12 +249,10 @@ h3{
 }
 
 .icons-lists{
-    display: grid;
-    grid-template-columns: repeat(7, 220px);
-    grid-template-rows: repeat(1, 250px);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    row-gap: 5px;
-    column-gap: 35px;
+    gap: 30px 25px;
     color: white;
     padding-left: 0;  
 }
@@ -261,11 +261,13 @@ h3{
     list-style: none;
     font-size: 20px;
     /* border: 2px solid yellow; */
+    height: 210px;
+    width: 190px;
     padding-top: 30px;
     background-color: rgba(78, 203, 159, 0.307);
     box-shadow: 0 0 8px rgb(18, 235, 159);
     border-radius: 15%;
-    transition: 0.3s ease 0.2s;
+    transition: 0.2s ease 0.2s;
 }
 
 .s-lists:hover{
@@ -274,7 +276,7 @@ h3{
 }
 
 .tail{
-    padding-top: 52px;
+    padding-top: 20px;
 }
 
 .s-lists span{
