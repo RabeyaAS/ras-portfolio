@@ -9,41 +9,48 @@ body {
     
 }
 
-.heading-sec{
-    /* position: relative; */
-    
-}
-
 .nav-bar{
     position: sticky;
     top: 0px;
-    z-index: 30;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid grey;
-    padding: 15px 80px 15px 80px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.229);
+    padding: 5px 20px 5px 20px;
     background-color: #05162e;
+    max-height: 90px;
 }
 
-#navbar-start{
-    /* font-size: larger;  */
+#navbar-start {
+    height:  92px;
+    width: 92px;
 }
 
 #navbar-start img{
-    border-radius: 70px;
+    height:  92px;
+    width: 92px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in;
+}
+
+#navbar-start img:hover{
+    margin-top: 20px;
+    margin-left: 8px;
+    transform: scale(1.40);
+    filter: drop-shadow(0 0 8px rgb(90,193,157));
+    border-radius: 70%;
 }
 
 .navbar-center{
     display: flex;
     align-items: center;
-    margin-top: 0px;
     padding-top: 0px;
+    padding-left: 0px;
 }
 
 .nav-li{
     margin: 14px;
     list-style: none;
-    border: 2px solid;
     border-radius: 15px;
     padding: 2px 15px 2px 15px;
     width: 95px;
@@ -63,34 +70,31 @@ body {
 }
 
 #navbar-end{
-    margin-top: 18px;
-    margin-right: 7px;
+    padding-top: 18px;
 }
 
 #light-btn{
     height: 47px;
     width: 50px;
-    background-color: rgb(180, 180, 249);
+    background-color: rgb(140, 201, 180);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.3s ease;
-    margin-top: 15px;
+    /* margin-top: 15px; */
+    /* padding-top: 20px; */
 }
 
 #light-btn:hover{
     transform: rotate(180deg);
 }
 
-.hero{
-    margin-top: 20px;
-    padding-top: 70px;
-}
 
 h2{
-    color: rgb(212, 215, 217);
+    /* color: rgb(212, 215, 217); */
+    color: white;
     font-weight: 700;
 }
 
@@ -108,7 +112,8 @@ p{
 }
 
 .hero-sect{
-    padding: 90px 180px 100px 180px;
+    padding: 80px 100px 100px 100px;
+    /* border: 2px solid  pink; */
 }
 
 .hero{
@@ -118,11 +123,11 @@ p{
 
 .hero-content{
     /* border: 2px solid white; */
-    width: 54%;
+    width: 64%;
 }
 
 .hero-text{
-    padding: 0px 15px 40px 15px;
+    padding: 0px 15px 35px 15px;
 }
 
 
@@ -133,8 +138,7 @@ p{
 
 .hero-button{
     width: 130px;
-    height: 45px;
-    border: 2px solid;
+    height: 40px;
     border-radius: 15px;
     text-align: center;
     background-color: rgb(90, 193, 157);
@@ -154,7 +158,7 @@ p{
 }
 
 .main-container{
-    margin: 0px 90px;
+    margin: 0px 50px;
     padding: 20px 0px;
     border: 4px solid green;
 }
@@ -285,6 +289,86 @@ h3{
     justify-content: center;
     margin-bottom: 5px;
     padding-bottom: 20px;
+}
+
+/* grid-template-columns: repeat(4, 250px); */
+    /* grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); */
+    /* grid-template-rows: repeat(2, 1fr); */
+
+.projects-container{
+    border: 2px solid wheat;
+    margin: 100px 0px;
+    text-align: center;
+}
+
+.projects-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    border: 2px solid blueviolet;
+
+}
+
+.projects-cards{
+    border: 2px solid yellow;
+    background-color: rgba(78, 203, 159, 0.307);
+    height: 622px;
+    width: 550px;
+    /* border-radius: 5%; */
+    border-radius: 28px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 25px;
+}
+
+.projects-cards p{
+    /* border: 2px solid floralwhite; */
+    max-width: 95%;
+    margin: auto;
+    padding: 15px 0px;
+    /* color: white; */
+}
+
+.projects-img{
+    /* border-radius: 20%; */
+}
+
+.projects-img img{
+    width: 95%;
+    height: 300px;
+    object-fit: cover;
+    /* border-radius: 5%; */
+    border-radius: 20px;
+}
+
+.projects-button{
+    /* border: 2px solid black; */
+    padding: 20px 0px;
+    /* transform: 0.2s ease; */
+    transition: background-color 0.2s ease;
+}
+
+.p-btn{
+    width: 170px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: rgb(90, 193, 157);
+    border-radius: 15px;
+
+}
+
+.p-btn:hover{
+    background-color: rgb(104, 220, 179);
+    transform: translateY(-2px);
+}
+
+.p-btn a{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    font-size: 18px;
+    font-weight: 600;
 }
 
 
