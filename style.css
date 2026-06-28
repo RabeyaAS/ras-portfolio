@@ -160,7 +160,7 @@ p{
 }
 
 .main-container{
-    margin: 0px 50px;
+    /* margin: 0px 50px; */
     padding: 20px 0px;
     /* border: 4px solid green; */
 }
@@ -168,8 +168,11 @@ p{
 .about-container{
     margin-top: 20px;
     margin-bottom: 50px;
+    padding-top: 15px;
     padding-bottom: 50px;
     /* border: 2px solid blueviolet; */
+    /* background-color: rgba(51, 51, 99, 0.401); */
+    background-color: rgba(51, 51, 99, 0.353);
 }
 
 .about-cont{
@@ -246,10 +249,10 @@ h3{
 
 .icons{
     /* border: 2px solid rgb(229, 17, 17); */
-    width: 70%;
+    width: 60%;
     margin: auto;
     text-align: center;
-    padding: 5px 30px 50px 30px;
+    padding: 0px 30px 0px 30px;
 }
 
 .icons h2{
@@ -298,7 +301,9 @@ h3{
 
 .projects-container{
     /* border: 2px solid wheat; */
-    margin: 100px 0px;
+    margin-top: 100px;
+    padding: 45px 0;
+    background-color: rgba(51, 51, 99, 0.353);
     text-align: center;
 }
 
@@ -307,7 +312,7 @@ h3{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 30px 0px;
+    padding: 20px 0px;
     /* border: 2px solid blueviolet; */
 
 }
@@ -384,6 +389,60 @@ h3{
     height: 30px;
     width: 34px;
 }
+
+.get-in-touch-cont{
+    /* border: 2px solid white; */
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+.get-intouch-headline{
+    padding: 20px;
+    text-align: center;
+    /* border: 2px solid yellow; */
+}
+
+.contact-form{
+    background-color: rgba(78, 203, 159, 0.307);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid khaki; */
+    max-width: 900px;
+    margin: auto;
+    gap: 10px 8px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#full-name, #email, #subject, #message, .form-btn{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: none;
+    padding: 0 15px;
+}
+
+#message{
+    padding-top: 15px;
+}
+
+#full-name, #email, #subject, .form-btn{
+    height: 45px;
+}
+
+.subject, .msg, .form-btn{
+    grid-column: 1 / -1;
+}
+
+.footer{
+    background-color: rgba(51, 51, 99, 0.353);
+    height: 200px;
+}
+
+
+
 
 /* grid-template-columns: repeat(4, 250px); */
     /* grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); */
