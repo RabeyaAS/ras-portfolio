@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family:'Times New Roman', Times, serif;
     width: auto;
@@ -13,6 +17,7 @@ body {
     position: sticky;
     top: 0px;
     z-index: 1;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(128, 128, 128, 0.229);
@@ -21,25 +26,33 @@ body {
     max-height: 70px;
 }
 
-#navbar-start {
-    height:  72px;
-    width: 72px;
+.navbar-start {
+    /* border: 2px solid white; */
+    /* height:  70px; */
+    width: 102px;    
+    padding: 0 10px;
+
+}
+
+.navbar-start h3{
+    margin-top: 19px;
+    margin-bottom: 20px;
 }
 
 #navbar-start img{
-    height:  72px;
-    width: 72px;
-    border-radius: 50%;
-    transition: transform 0.3s ease-in;
+    /* height:  72px; */
+    /* width: 72px; */
+    /* border-radius: 50%; */
+    /* transition: transform 0.3s ease-in; */
 
 }
 
 #navbar-start img:hover{
-    margin-top: 20px;
-    margin-left: 8px;
-    transform: scale(1.50);
-    filter: drop-shadow(0 0 8px rgb(90,193,157));
-    border-radius: 70%;
+    /* margin-top: 20px; */
+    /* margin-left: 8px; */
+    /* transform: scale(1.50); */
+    /* filter: drop-shadow(0 0 8px rgb(90,193,157)); */
+    /* border-radius: 70%; */
 }
 
 .navbar-center{
@@ -72,11 +85,13 @@ body {
 
 #navbar-end{
     padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #light-btn{
     height: 45px;
-    width: 48px;
+    width: 49px;
     background-color: rgb(140, 201, 180);
     display: flex;
     justify-content: center;
@@ -85,8 +100,6 @@ body {
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
-    /* margin-top: 15px; */
-    /* padding-top: 20px; */
 }
 
 #light-btn:hover{
@@ -105,6 +118,8 @@ h1{
     color: rgb(90, 193, 157);
     /* padding-bottom: 5px; */
     font-size: 2.1rem;
+    margin-bottom: 0;
+    /* margin-top: 20px; */
 }
 
 p{
@@ -134,26 +149,64 @@ p{
     padding: 0px 15px 35px 15px;
 }
 
+.hero-name h2{
+    margin-bottom: 0;
+}
+
+.move{
+    transform: translateX(125px);
+    width: 50%;
+}
+
+.hero-intro p{
+    margin-top: 15px;
+}
+
 
 .hero-btn{
+    /* border: 2px solid white; */
     display: flex;
+    justify-content: start;
+    align-items: center;
     padding-left: 15px;
+    width: 70%;
+}
+
+.hero-btn p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-btn i{
+    font-size: 11px;
 }
 
 .hero-button{
-    width: 130px;
-    height: 40px;
+    /* border: 2px solid blue; */
+    padding-left: 5px;
+}
+
+.hero-button button{
+    width: 190px;
+    height: 48px;
+    border: none;
     border-radius: 15px;
     text-align: center;
     background-color: rgb(90, 193, 157);
-    padding: 17px 20px 0px 20px;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 
 .hero-button a{
-    color: rgb(8, 8, 8);
-    font-size: 21px;
     text-decoration: none;
+    color: rgb(8, 8, 8);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#contact{
+    scroll-margin-top: 70px;
 }
 
 #hero-image img{
@@ -465,7 +518,7 @@ h3{
 }
 
 .small-text{
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 0;
     color: rgba(90, 193, 157, 0.926);
     /* border: 2px solid blue; */
@@ -479,6 +532,8 @@ h3{
 
 .connect{
     /* border: 2px solid black; */
+    color: rgb(90, 193, 157);
+
     font-size: 21px;
     margin-top: 0px;
     margin-bottom: 0;
@@ -495,31 +550,37 @@ h3{
 
 .footer-links{
     /* border: 2px solid pink; */
-    /* height: 60px; */
+    /* height: auto; */
     width: 120px;
     margin: 5px auto;
-    padding: 8px 4px 7px 4px;
+    padding: 8px 4px 8px 4px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
 }
 
-.footer-links li{
+.footer-links a{
+    /* border: 2px solid red; */
+
     display: flex;
     justify-content: center;
-    /* border: 2px solid red; */
+    align-items: center;
+
     background-color: white;
-    width: 32px;
-    padding: 7px 0px 6px 0px;
-    border-radius: 5px;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+
+    text-decoration: none;
 }
 
 .footer-icons{
     /* color: rgb(12, 120, 82); */
+    /* border: 2px solid blueviolet; */
     color: rgb(9, 99, 68);
     font-size: 41px;
-    transform: color 0.2s ease, transform 0.2s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 
 }
 
