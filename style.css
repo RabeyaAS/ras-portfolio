@@ -5,13 +5,23 @@ html{
 body {
     font-family:'Times New Roman', Times, serif;
     width: auto;
-    /* margin: 0px 80px; */
     margin: 0 auto;
     background-color: #05162e;
-    /* background-color: #0d1a2b; */
-    position: relative;
-    
+    position: relative;   
 }
+
+#about{
+    scroll-margin-top: 115px;
+}
+
+#projects, #contact{
+    scroll-margin-top: 70px;
+}
+
+#home, #skills{
+    scroll-margin-top: 140px;
+}
+
 
 .nav-bar{
     position: sticky;
@@ -28,7 +38,6 @@ body {
 
 .navbar-start {
     /* border: 2px solid white; */
-    /* height:  70px; */
     width: 102px;    
     padding: 0 10px;
 
@@ -71,7 +80,12 @@ body {
     height: 40px;
     align-content: center;
     background-color: rgb(90, 193, 157);
+    transition: transform 0.2s ease;
+}
 
+.nav-li:hover{
+    background-color: rgb(80, 228, 176);
+    transform: scale(1.03);
 }
 
 .nav-li a{
@@ -99,7 +113,7 @@ body {
     border-radius: 50%;
     border: none;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 #light-btn:hover{
@@ -196,17 +210,20 @@ p{
     text-align: center;
     background-color: rgb(90, 193, 157);
     margin-right: 60px;
+    transition: transform 0.2s ease;
+}
+
+.hero-button button:hover{
+    background-color: rgb(80, 228, 176);
+    transform: scale(1.03);
 }
 
 .hero-button a{
     text-decoration: none;
     color: rgb(8, 8, 8);
     font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
-}
-
-#contact{
-    scroll-margin-top: 70px;
 }
 
 #hero-image img{
@@ -215,18 +232,15 @@ p{
 }
 
 .main-container{
-    /* margin: 0px 50px; */
-    padding: 20px 0px;
+    padding: 10px 0px;
     /* border: 4px solid green; */
 }
 
 .about-container{
     margin-top: 20px;
-    margin-bottom: 50px;
     padding-top: 15px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     /* border: 2px solid blueviolet; */
-    /* background-color: rgba(51, 51, 99, 0.401); */
     background-color: rgba(51, 51, 99, 0.353);
 }
 
@@ -297,8 +311,8 @@ h3{
 }
 
 .icons-container{
-    /* margin: 0px; */
-    /* padding:0px; */
+    margin-top: 65px;
+    margin-bottom: 100px;
     /* border: 2px solid white; */
 }
 
@@ -311,7 +325,7 @@ h3{
 }
 
 .icons h2{
-    padding-top: 30px;
+    /* padding-top: 30px; */
     padding-bottom: 40px;
 }
 
@@ -356,8 +370,8 @@ h3{
 
 .projects-container{
     /* border: 2px solid wheat; */
-    margin-top: 100px;
-    padding: 45px 0;
+    /* margin-top: 100px; */
+    padding: 40px 0;
     background-color: rgba(51, 51, 99, 0.353);
     text-align: center;
 }
@@ -412,11 +426,15 @@ h3{
     height: 40px;
     background-color: rgb(90, 193, 157);
     border-radius: 15px;
+    border-style: none;
+    /* rgba(32, 74, 58, 0.684) */
+    box-shadow: 0px 0px 3px 1px rgba(51, 51, 99, 0.658);
+    
 }
 
 .p-btn:hover{
-    background-color: rgb(104, 220, 179);
-    transform: translateY(-2px);
+    background-color: rgb(80, 228, 176);
+    transform: scale(1.03);
 }
 
 .p-btn a{
@@ -541,8 +559,6 @@ h3{
 }
 
 .footer-link-cont{
-    /* display: flex; */
-    /* justify-content:; */
     /* border: 2px solid darkcyan; */
     margin-bottom: 25px;
 }
@@ -550,7 +566,6 @@ h3{
 
 .footer-links{
     /* border: 2px solid pink; */
-    /* height: auto; */
     width: 120px;
     margin: 5px auto;
     padding: 8px 4px 8px 4px;
