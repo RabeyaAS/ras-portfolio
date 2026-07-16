@@ -28,6 +28,7 @@ body {
     top: 0px;
     z-index: 1;
     margin: 0 auto;
+    width: auto;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(128, 128, 128, 0.229);
@@ -145,7 +146,7 @@ p{
 }
 
 .hero-sect{
-    padding: 90px 100px 100px 100px;
+    padding: 90px 60px 100px 60px;
     /* border: 2px solid  pink; */
 }
 
@@ -160,7 +161,7 @@ p{
 }
 
 .hero-text{
-    padding: 0px 15px 35px 15px;
+    padding: 0px 20px 35px 15px;
 }
 
 .hero-name h2{
@@ -183,7 +184,7 @@ p{
     justify-content: start;
     align-items: center;
     padding-left: 15px;
-    width: 70%;
+    width: 90%;
 }
 
 .hero-btn p{
@@ -260,6 +261,14 @@ p{
 
 .about-text h2{
     padding-bottom: 15px;
+}
+
+.about-text a{
+    color: rgb(173, 176, 177);
+}
+
+.about-text a:hover{
+    color: rgb(90, 193, 157);
 }
 
 .stats-container{
@@ -511,7 +520,7 @@ h3{
 
 .footer{
     background-color: rgba(51, 51, 99, 0.353);
-    height: 352px;
+    height: 351px;
     text-align: center;
     /* border: 2px solid white; */
     padding-top: 10px;
@@ -615,7 +624,105 @@ h3{
     font-size: 17px;
 }
 
-/* grid-template-columns: repeat(4, 250px); */
-    /* grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); */
-    /* grid-template-rows: repeat(2, 1fr); */
+/* Media Querry - Tablet size*/
+@media screen and (min-width:768px) and (max-width:990px) {
+    #about{
+        scroll-margin-top: 95px;
+    }
+
+    .navbar-start .initials{
+        font-size: 1.48rem;
+    }
+    
+    .nav-bar{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .navbar-start{
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .navbar-start h3{
+        margin-top: 23px;
+        margin-bottom: 10px;
+    }
+
+    .nav-li{
+        width: 80px;
+        margin: 7px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    .nav-li a{
+        font-size: 19px;
+    }
+
+    #navbar-end{
+        padding-right: 0px;
+        padding-top: 15px;
+        padding-left: 5px;
+    }
+    
+    #light-btn i{
+        font-size: x-large;
+    }
+
+    #light-btn{
+        height: 40px;
+        width: 41px;
+    }
+
+    /* hero section */
+    .hero-sect{
+        padding: 75px 20px 75px 10px;
+    }
+    .hero-content{
+        width: 60%;
+    }
+    .hero-text{
+        padding-bottom: 10px;
+    }
+    .hero-btn{
+        width: 420px;
+        padding-left: 0px;
+    }
+
+    .hero-button button{
+        margin-right: 40px;
+    }
+
+    #hero-image{
+        height: 450px;
+    }
+
+    #hero-image img{
+        height: 410px;
+        width: 305px;
+    }
+
+    /* about section */
+    .about-text{
+        width: 87%;
+    }
+    .stats-container{
+        width: 64%;
+    }
+
+    /* skills section */
+    .icons{
+        width: 90%;
+    }
+
+    /* contact section */
+    .contact-form{
+        width: 85%;
+    }
+
+}
+
+
+@media screen and (max-width:767px) {
+    
+}
 
