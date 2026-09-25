@@ -288,12 +288,6 @@ p{
     padding: 0px 20px 10px 20px;
     text-align: center;
     align-items: center;
-    transition: 0.2s ease-in 0.2s;
-}
-
-.stats-card:hover{
-    transform: translateX(-10px) translateY(-20px);
-    box-shadow: 0 0 18px rgb(18, 235, 159);
 }
 
 .stats-card h3{
@@ -397,7 +391,7 @@ h3{
 .projects-cards{
     /* border: 2px solid yellow; */
     background-color: rgba(78, 203, 159, 0.307);
-    height: 770px;
+    height: auto;
     width: 540px;
     border-radius: 27px;
     text-align: center;
@@ -422,7 +416,7 @@ h3{
 
 .projects-button{
     /* border: 2px solid black; */
-    padding: 20px 0px;
+    padding: 20px 0px 30px 0px;
     display: flex;
     justify-content: space-evenly;
     /* transform: 0.2s ease; */
@@ -823,6 +817,12 @@ h3{
         height: 810px;
     }
 
+    /* contact section */
+    .contact-form{
+        width: 80%;
+        grid-template-columns: repeat(2, 395px);
+    }
+
 }
 
 
@@ -937,7 +937,7 @@ h3{
         width: 87%;
     }
     .stats-container{
-        width: 64%;
+        width: 74%;
     }
     .stats-card h3{
         font-size: 35px;
@@ -957,6 +957,7 @@ h3{
     /* contact section */
     .contact-form{
         width: 85%;
+        grid-template-columns: repeat(2, 312px);
     }
 
 }
@@ -1067,7 +1068,7 @@ h3{
         width: 80%;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 27px;
         /* border: 2px solid pink; */
     }
 
@@ -1081,7 +1082,7 @@ h3{
     }
 
     .projects-cards{
-        height: 810px;
+        height: auto;
         width: 365px;
         margin: auto;
         padding-left: 10px;
@@ -1103,7 +1104,7 @@ h3{
     }
     
     .projects-button{
-        gap: 10px;
+        gap: 7px;
     }
 
 
@@ -1229,7 +1230,7 @@ h3{
         width: 80%;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 26px;
         /* border: 2px solid pink; */
     }
 
@@ -1262,7 +1263,7 @@ h3{
     }
 
     .projects-cards{
-        height: 840px;
+        height: auto;
         width: 320px;
         margin: auto;
         padding-left: 10px;
@@ -1453,7 +1454,7 @@ h3{
         width: 50%;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 26px;
     }
     .stats-card{
         height: 120px;
@@ -1491,7 +1492,7 @@ h3{
         gap: 25px;
     }
     .projects-cards{
-        height: 808px;
+        height: auto;
         width: 265px;
         margin: auto;
         padding-left: 10px;
