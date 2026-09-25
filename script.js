@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
         const progress = Math.min(1, 
             Math.max(0, 
                 (window.innerHeight - cardPosition.top - delay) / 155)
-        );
+        ); 
 
         // movement
         const moveX = 0 * progress;
@@ -42,6 +42,40 @@ window.addEventListener('scroll', () => {
 
 // ---------------------------------------------
 
+
+// skills card animation on scroll
+const skillsCard = document.querySelectorAll('.s-lists');
+
+window.addEventListener('scroll', () => {
+    
+    skillsCard.forEach((skill, index) => {
+        const cardPosition = skill.getBoundingClientRect();
+
+        // Delay in milliseconds for each card 
+        const delay = index * 80;  
+
+        // distance of card entering the viewport 
+        const progress = Math.min(1, 
+            Math.max(0, 
+                (window.innerHeight - cardPosition.top - delay) / 42)
+        );
+
+        // movement
+        const moveX = 0 * progress;
+        const moveY = -25 * progress;
+
+        // shadow 
+        const shadowY = 0 +(9 * progress);
+        const shadowBlur = 13 + (2 * progress);
+        const shadowSpread = 0 + (4 * progress);
+
+        // applying everything together to move the card 
+        skill.style.boxShadow = `0px ${shadowY}px ${shadowBlur}px ${shadowSpread}px rgb(78, 203, 159)`;
+
+        skill.style.transform = `translateX(${moveX}px) translateY(${moveY}px)`;
+
+    });
+}); 
 
 
 

@@ -320,7 +320,7 @@ h3{
 
 .icons{
     /* border: 2px solid rgb(229, 17, 17); */
-    width: 60%;
+    width: 70%;
     margin: auto;
     text-align: center;
     padding: 0px 30px 0px 30px;
@@ -335,7 +335,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px 25px;
+    gap: 40px 35px;
     color: white;
     padding-left: 0;  
 }
@@ -347,15 +347,10 @@ h3{
     height: 210px;
     width: 190px;
     padding-top: 30px;
-    background-color: rgba(78, 203, 159, 0.307);
-    box-shadow: 0 0 9px rgb(18, 235, 159);
     border-radius: 15%;
-    transition: 0.2s ease 0.2s;
-}
-
-.s-lists:hover{
-    transform: translateX(-15px)  translateY(-30px);
-    box-shadow: 5px 8px 15px 4px rgb(78, 203, 159);
+    background-color: rgba(78, 203, 159, 0.307);
+    
+    transition: transform 0.3s linear, box-shadow 0.3s linear 0.12s;
 }
 
 .tail{
@@ -1072,6 +1067,11 @@ h3{
         /* border: 2px solid pink; */
     }
 
+    /* skill sections */
+    .icons-lists{
+        gap: 30px;
+    }
+
     /* projects section */
     .projects-cont{
         gap: 25px;
@@ -1230,11 +1230,14 @@ h3{
         width: 80%;
         flex-direction: column;
         align-items: center;
-        gap: 26px;
+        gap: 27px;
         /* border: 2px solid pink; */
     }
 
     /* skills section */
+    .icons-lists{
+        gap: 30px;
+    }
     .s-lists{
         height: 200px;
         width: 180px;
@@ -1469,6 +1472,10 @@ h3{
     }
 
     /* skills section */
+    .icons-lists{
+        gap: 28px;
+    }
+
     .s-lists{
         height: 160px;
         width: 160px;
