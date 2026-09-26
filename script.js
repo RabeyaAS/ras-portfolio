@@ -77,5 +77,51 @@ window.addEventListener('scroll', () => {
     });
 }); 
 
+// ---------------------------------------------
+
+// contact form 
+window.formspree = window.formspree || 
+    function () {
+        (formspree.q = formspree.q || []).push(arguments);
+    };
+
+    formspree("initForm", {
+        formElement: "#the-form",
+        formId: "mgavnrrd",
+
+        renderSuccess: ({form}, message) => {
+            const successMessage = document.createElement("div");
+
+            successMessage.className = "success-popup";
+            successMessage.innerHTML = `
+            <strong>Message Sent!</strong>
+            <span>Thanks for reaching out! You'll receive a response within 3 working days.</span>
+            `;
+
+            document.body.appendChild(successMessage);
+            
+            setTimeout(() => {
+                successMessage.remove();
+            }, 6000);
+        },
+
+        renderFormError: ({form}, message) => {
+            const errorMessage = document.createElement("div");
+
+            errorMessage.className = "error-popup";
+            errorMessage.innerHTML = `
+            <strong>Oops! There seems to be a problem!</strong> 
+            <span>Please check the required fields and try again.</span>
+            `;
+
+            document.body.appendChild(errorMessage);
+            
+            setTimeout(() => {
+                errorMessage.remove();
+            }, 6000);
+        },
+
+    });
+
 
 

@@ -53,7 +53,7 @@
                         </div>
                         <div class="hero-intro">
                             <h1>Front-End Web Developer</h1>
-                            <p>I build modern, responsive and user-friendly websites using HTML, CSS and JavaScript. Dedicated to crafting accessible and engaging web experiences while continuously expanding my knowledge and skills in front-end development.
+                            <p>I build modern, responsive and user-friendly websites using HTML5, CSS3, JavaScript and other technologies. Dedicated to crafting accessible and engaging web experiences while continuously expanding my knowledge and skills in front-end development.
                             </p>
                         </div>
                     </div>
@@ -83,7 +83,10 @@
             <div class="about-cont">
                 <div class="about-text">
                     <h2>About Me</h2>
-                    <p>Passionate front-end developer focused on building responsive, accessible and visually appealing websites. I enjoy strengthening my skills through personal projects while preparing to begin a Computer Science master's degree. I currently work with six front-end technologies and have built several projects that demonstrate my growing expertise. Feel free to check out my <span><a href="https://github.com/RabeyaAS" target="_blank" rel="noopener noreferrer">GitHub</a></span> profile to explore my projects and follow my journey as a developer.
+                    <p>Passionate front-end developer focused on building responsive, accessible and visually appealing websites. I enjoy strengthening my skills through personal projects while studying for an MSc Computer Science at Queen Mary University of London. I currently work with six front-end technologies and have built several projects that demonstrate my growing technical skills and practical experience. I am also developing my programming fundamentals by learning Python.
+                    <br>
+                    <br>
+                    I chose to build this portfolio using HTML5, CSS3 and JavaScript without relying on CSS utility frameworks, allowing me to demonstrate my understanding of core front-end technologies and responsive design principles. Throughout my projects, I have applied different technologies and techniques to create functional, engaging and user-friendly web experiences. Feel free to visit my <span><a href="https://github.com/RabeyaAS" target="_blank" rel="noopener noreferrer">GitHub</a></span> profile to explore my projects and follow my development journey.  
                     </p>
                 </div>
 
@@ -125,7 +128,11 @@
                     </li>
 
                     <li class="s-lists">
-                        <span><img src="assets/dom-lg-img.png" alt="dom" height="130px" width="157px"></span> DOM
+                        <span><img src="assets/dom-lg-img.png" alt="dom" height="130px" width="155px"></span> DOM
+                    </li>
+
+                    <li class="s-lists ai">
+                        <span><img src="assets/AI-logo-1.jpg" alt="ai" height="134px" width="155px"></span> AI Assisted Development
                     </li>
                     
                     <li class="s-lists">
@@ -267,29 +274,38 @@
             </div>
 
             <!-- form area -->
-            <form action="" class="contact-form">
+            <form action="" id="the-form" class="contact-form">
                 <!-- full name -->
                 <div class="f-name">
-                    <input required type="text" placeholder="Full Name" name="full-name" id="full-name" autocomplete="name">
+                    <input required type="text" placeholder="Full Name" name="full-name" id="full-name" autocomplete="name"
+                    data-fs-field>
+
+                    <span data-fs-error="full-name"></span>
                 </div>
 
                 <!-- email -->
                 <div class="email">
-                    <input placeholder="Email Address" required type="email" name="email" id="email" autocomplete="email">
+                    <input placeholder="Email Address" required type="email" name="email" id="email" autocomplete="email" data-fs-field>
+
+                    <span data-fs-error="email"></span>
                 </div>
 
                 <!-- subject -->
                  <div class="subject">
-                    <input placeholder="Subject" required type="text" name="subject" id="subject">
+                    <input placeholder="Subject" required type="text" name="subject" id="subject" data-fs-field>
+
+                    <span data-fs-error="subject"></span>
                 </div>
 
                 <!-- message -->
                  <div class="msg">
-                    <textarea required name="message" id="message" placeholder="Your Message" cols="67" rows="7"></textarea>
-                </div>
+                    <textarea required name="message" id="message" placeholder="Your Message" cols="67" rows="9" data-fs-field></textarea>
 
+                    <span data-fs-error="message"></span>
+                 </div>
+                
                 <!-- button -->
-                <button type="submit" class="form-btn">Send Message</button>
+                <button type="submit" class="form-btn" data-fs-submit-btn>Send Message</button>
             </form>
         </section>
     </main>
@@ -317,6 +333,9 @@
         </div>
     </footer>
 
+
+
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
     <script src="script.js"></script>
 
