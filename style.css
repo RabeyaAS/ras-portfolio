@@ -1315,28 +1315,25 @@ h3{
 
     /* projects section */
     .projects-cont{
-        gap: 25px;
-    }
-
-    .projects-cards:nth-child(2) {
-        height: 875px;
+        gap: 35px;
     }
 
     .projects-cards{
         height: auto;
-        width: 320px;
+        width: 85%;
         margin: auto;
         padding-left: 10px;
         padding-right: 10px;
     }
 
     .projects-cards p{
-        max-width: 98%;
+        max-width: 90%;
+
     }
 
     .projects-img img{
         height: 250px;
-        width: 315px;
+        width: 308px;
     }
 
     .proj-skills-cont{
@@ -1349,16 +1346,19 @@ h3{
     }
 
     /* contact section */
-    .get-intouch-headline{
+    .get-in-touch-headline{
         padding: 0px;
     }
 
     .get-in-touch-cont{
-        padding: 0 17px;
+        /* padding: 0 15px; */
     }
 
     .contact-form{
-        grid-template-columns: repeat(2, 147px);
+        grid-template-columns: repeat(2, 143px);
+        width: auto;
+        margin: 0 10px;
+        
     }
 
     .f-name, .email{
