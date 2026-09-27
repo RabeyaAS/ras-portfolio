@@ -1506,7 +1506,7 @@ h3{
 
     /* about section */
     .about-text{
-        width: 90%;
+        width: 85%;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -1554,22 +1554,30 @@ h3{
     /* projects cards */
     .projects-cont{
         gap: 25px;
+        /* width: 80%; */
+        /* margin: auto; */
     }
     .projects-cards{
         height: auto;
-        width: 265px;
-        margin: auto;
+        width: 85%;
+        /* margin: 30px; */
         padding-left: 10px;
         padding-right: 10px;
     }
 
+    .projects-cards p{
+        max-width: 95%;
+        margin: auto;
+
+    }
+
     .projects-img img{
         height: 180px;
-        width: 260px;
+        width: 220px;
     }
 
     .proj-skills-cont{
-        gap: 5px 20px;
+        gap: 10px 15px;
         flex-wrap: wrap;
     }
     
@@ -1585,7 +1593,7 @@ h3{
     }
 
     .contact-form{
-        grid-template-columns: repeat(2, 130px);  
+        grid-template-columns: repeat(2, 116px);  
     }
 
     .f-name, .email{
