@@ -92,9 +92,13 @@ body {
     display: none;
 }
 
-#light-btn{
+.nav-drawer{
+    display: none;
+}
+
+#light-btn2{
     height: 45px;
-    width: 49px;
+    width: 48px;
     background-color: rgb(140, 201, 180);
     display: flex;
     justify-content: center;
@@ -105,7 +109,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-#light-btn:hover{
+#light-btn2:hover{
     transform: rotate(180deg);
 }
 
@@ -1056,15 +1060,19 @@ h3{
         justify-content: space-between;
         width: 45px;
         padding-top: 4px;
+        position: relative;
     }
+
+    #light-btn2{
+        display: none;
+    }
+
     .menu-bar{
         display: block;
         font-size: 28px;
         margin-top: 0;
         height: 40px;
         width: 44px;
-        /* margin-bottom: 6px; */
-        /* padding: 0px 10px; */
         border-style: none;
         /* border: 1px solid rgba(90, 193, 157, 0.292); */
         background-color: rgba(90, 193, 157, 0.199);
@@ -1075,8 +1083,8 @@ h3{
         flex-direction: column;
         align-items: stretch;
         position: absolute;
-        top: 50px;
-        right: 25px;
+        top: 54px;
+        right: 1px;
         background-color:rgba(78, 126, 110, 0.921);
 
     }
@@ -1087,11 +1095,9 @@ h3{
 
     .nav-drawer ul{
         list-style: none;
-        margin: 20px;
-        padding: 10px 13px;
-        /* padding-left: 0; */
-        /* padding-right: 50px; */
-        width: 80px;
+        margin: 20px 20px 20px 10px;
+        padding: 10px 48px 10px 20px;
+        width: 100px;
         height: 200px;
 
     }
@@ -1105,17 +1111,11 @@ h3{
         text-decoration: none;
     }
 
-    /* #light-btn {
-        width: 40px;
-        height: 40px;
-        
-    } */
-
     .nav-drawer #light-btn {
         width: auto;
         height: auto;
 
-        margin: 15px 20px;
+        margin: 15px 0px 15px 25px;
         padding: 8px 0;
 
         display: flex;
@@ -1141,25 +1141,18 @@ h3{
         font-size: 22px;
     }
 
-    /* #light-btn{
-    height: 45px;
-    width: 49px;
-    background-color: rgb(140, 201, 180);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
+    .nav-drawer #light-btn i.rotate{
+        animation: spinIcon 0.4s ease;
+    }
 
-#light-btn:hover{
-    transform: rotate(180deg);
-} */
-
-
-
+    @keyframes spinIcon {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
 
     /* hero section */
     .move{

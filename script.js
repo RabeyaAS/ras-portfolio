@@ -133,3 +133,18 @@ menuBar.addEventListener("click", () => {
     navDrawer.classList.toggle("open");
 });
 
+
+// light mode click event
+const lightBtn = document.getElementById("light-btn");
+const lightIcon = lightBtn.querySelector("i");
+
+lightBtn.addEventListener("click", () => {
+    console.log("Light mode button clicked");
+
+    lightIcon.classList.remove("rotate");
+
+    void lightIcon.offsetWidth;
+    lightIcon.classList.add("rotate");
+
+});
+
