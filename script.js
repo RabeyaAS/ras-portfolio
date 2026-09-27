@@ -126,6 +126,9 @@ window.formspree = window.formspree ||
 // ---------------------------------------------
 
 // nav menu toggle
+const menuBar = document.querySelector(".menu-bar");
+const navDrawer = document.querySelector(".nav-drawer");
+
 menuBar.addEventListener("click", () => {
     navDrawer.classList.toggle("open");
 });
