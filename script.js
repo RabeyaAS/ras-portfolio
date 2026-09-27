@@ -123,5 +123,10 @@ window.formspree = window.formspree ||
 
     });
 
+// ---------------------------------------------
 
+// nav menu toggle
+menuBar.addEventListener("click", () => {
+    navDrawer.classList.toogle("open");
+});
 
