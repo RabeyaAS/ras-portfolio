@@ -7,9 +7,9 @@ window.addEventListener('scroll', () => {
         const cardPosition = card.getBoundingClientRect();
 
         // Delay in milliseconds for each card 
-        const delay = index * 70;  
+        const delay = index * 65;  
 
-        // distance of card entering the viewport 
+        // distance of card entering the viewport  
         const progress = Math.min(1, 
             Math.max(0, 
                 (window.innerHeight - cardPosition.top - delay) / 155)
@@ -36,7 +36,6 @@ window.addEventListener('scroll', () => {
 
     });
 
-
 });
 
 
@@ -52,12 +51,13 @@ window.addEventListener('scroll', () => {
         const cardPosition = skill.getBoundingClientRect();
 
         // Delay in milliseconds for each card 
-        const delay = index * 80;  
+        const delay = index * 20;  
 
         // distance of card entering the viewport 
+        // previously used (42)
         const progress = Math.min(1, 
             Math.max(0, 
-                (window.innerHeight - cardPosition.top - delay) / 42)
+                (window.innerHeight - cardPosition.top - delay) / 60)
         );
 
         // movement
